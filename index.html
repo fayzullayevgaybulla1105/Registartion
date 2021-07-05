@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stryle.css">
+    <title>Loop2</title>
+</head>
+
+<body>
+    <div class="parent">
+        <p>Registration Form</p>
+        <hr>
+        <form id="registrationForm">
+            <div class="first-last-name">
+                <label for="">
+                    <input type="text" placeholder="First name" name="firstname" required minlength="5">
+                </label>
+                <label for="">
+                    <input type="text" placeholder="Last name" name="lastname" required minlength="5">
+                </label>
+            </div>
+            <label for="" class="user-email-bio">
+                <label for="">
+                    <input id='username' type="text" placeholder="Username" name="username" required minlength="5">
+                </label>
+                <label for="">
+                    <input id="email" type="email" placeholder="Email address" name="email" required minlength="8">
+                </label>
+                <select id="gender" name="gender" value='gender'>
+                    <option default>Gender</option>
+                    <option value="erkak">Erkak</option>
+                    <option value="ayol">Ayol</option>
+                </select>
+                <label for="">
+                    <input id='password' type="password" placeholder="Password" name="password" required minlength="8">
+                </label>
+                <label for="">
+                    <input id='confirmpassword' type="password" placeholder="Confirm password" name="Confirmpassword"
+                        required minlength="8">
+                </label>
+                <div class="check">
+                    <label for="">
+                        <input type="checkbox"  id="checkbox">
+                    </label>
+                    <p>ushbu ro`yxatdan o`tish tizimini o`zim, o`z so`zim va o`z qo`lim bilan to`ldirganimni tasdiqlayman... </p>
+                </div>
+
+                <span id='errorMessage'></span>
+                <button class="btn-send" id='btn' type="submit"> Register</button>
+        </form>
+    </div>
+    <script src="./vazifa.js"></script>
+
+</body>
+
+</html>
